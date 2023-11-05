@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8D1A71D2AF7ECA600024596 /* redaktusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A71C2AF7ECA600024596 /* redaktusApp.swift */; };
+		A8D1A71F2AF7ECA600024596 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A71E2AF7ECA600024596 /* ContentView.swift */; };
+		A8D1A7212AF7ECAA00024596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D1A7202AF7ECAA00024596 /* Assets.xcassets */; };
+		A8D1A7242AF7ECAA00024596 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D1A7232AF7ECAA00024596 /* Preview Assets.xcassets */; };
+		A8D1A72F2AF7ECAB00024596 /* redaktusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A72E2AF7ECAB00024596 /* redaktusTests.swift */; };
+		A8D1A7392AF7ECAB00024596 /* redaktusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A7382AF7ECAB00024596 /* redaktusUITests.swift */; };
+		A8D1A73B2AF7ECAB00024596 /* redaktusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A73A2AF7ECAB00024596 /* redaktusUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8D1A72B2AF7ECAB00024596 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8D1A7112AF7ECA600024596 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8D1A7182AF7ECA600024596;
+			remoteInfo = redaktus;
+		};
+		A8D1A7352AF7ECAB00024596 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8D1A7112AF7ECA600024596 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8D1A7182AF7ECA600024596;
+			remoteInfo = redaktus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A8D1A7192AF7ECA600024596 /* redaktus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = redaktus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D1A71C2AF7ECA600024596 /* redaktusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redaktusApp.swift; sourceTree = "<group>"; };
+		A8D1A71E2AF7ECA600024596 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A8D1A7202AF7ECAA00024596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8D1A7232AF7ECAA00024596 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A8D1A7252AF7ECAA00024596 /* redaktus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = redaktus.entitlements; sourceTree = "<group>"; };
+		A8D1A72A2AF7ECAB00024596 /* redaktusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = redaktusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D1A72E2AF7ECAB00024596 /* redaktusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redaktusTests.swift; sourceTree = "<group>"; };
+		A8D1A7342AF7ECAB00024596 /* redaktusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = redaktusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D1A7382AF7ECAB00024596 /* redaktusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redaktusUITests.swift; sourceTree = "<group>"; };
+		A8D1A73A2AF7ECAB00024596 /* redaktusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redaktusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8D1A7162AF7ECA600024596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D1A7272AF7ECAB00024596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D1A7312AF7ECAB00024596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8D1A7102AF7ECA600024596 = {
+			isa = PBXGroup;
+			children = (
+				A8D1A71B2AF7ECA600024596 /* redaktus */,
+				A8D1A72D2AF7ECAB00024596 /* redaktusTests */,
+				A8D1A7372AF7ECAB00024596 /* redaktusUITests */,
+				A8D1A71A2AF7ECA600024596 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8D1A71A2AF7ECA600024596 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8D1A7192AF7ECA600024596 /* redaktus.app */,
+				A8D1A72A2AF7ECAB00024596 /* redaktusTests.xctest */,
+				A8D1A7342AF7ECAB00024596 /* redaktusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8D1A71B2AF7ECA600024596 /* redaktus */ = {
+			isa = PBXGroup;
+			children = (
+				A8D1A71C2AF7ECA600024596 /* redaktusApp.swift */,
+				A8D1A71E2AF7ECA600024596 /* ContentView.swift */,
+				A8D1A7202AF7ECAA00024596 /* Assets.xcassets */,
+				A8D1A7252AF7ECAA00024596 /* redaktus.entitlements */,
+				A8D1A7222AF7ECAA00024596 /* Preview Content */,
+			);
+			path = redaktus;
+			sourceTree = "<group>";
+		};
+		A8D1A7222AF7ECAA00024596 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A8D1A7232AF7ECAA00024596 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A8D1A72D2AF7ECAB00024596 /* redaktusTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8D1A72E2AF7ECAB00024596 /* redaktusTests.swift */,
+			);
+			path = redaktusTests;
+			sourceTree = "<group>";
+		};
+		A8D1A7372AF7ECAB00024596 /* redaktusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A8D1A7382AF7ECAB00024596 /* redaktusUITests.swift */,
+				A8D1A73A2AF7ECAB00024596 /* redaktusUITestsLaunchTests.swift */,
+			);
+			path = redaktusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8D1A7182AF7ECA600024596 /* redaktus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8D1A73E2AF7ECAB00024596 /* Build configuration list for PBXNativeTarget "redaktus" */;
+			buildPhases = (
+				A8D1A7152AF7ECA600024596 /* Sources */,
+				A8D1A7162AF7ECA600024596 /* Frameworks */,
+				A8D1A7172AF7ECA600024596 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = redaktus;
+			productName = redaktus;
+			productReference = A8D1A7192AF7ECA600024596 /* redaktus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8D1A7292AF7ECAB00024596 /* redaktusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8D1A7412AF7ECAB00024596 /* Build configuration list for PBXNativeTarget "redaktusTests" */;
+			buildPhases = (
+				A8D1A7262AF7ECAB00024596 /* Sources */,
+				A8D1A7272AF7ECAB00024596 /* Frameworks */,
+				A8D1A7282AF7ECAB00024596 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8D1A72C2AF7ECAB00024596 /* PBXTargetDependency */,
+			);
+			name = redaktusTests;
+			productName = redaktusTests;
+			productReference = A8D1A72A2AF7ECAB00024596 /* redaktusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A8D1A7332AF7ECAB00024596 /* redaktusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8D1A7442AF7ECAB00024596 /* Build configuration list for PBXNativeTarget "redaktusUITests" */;
+			buildPhases = (
+				A8D1A7302AF7ECAB00024596 /* Sources */,
+				A8D1A7312AF7ECAB00024596 /* Frameworks */,
+				A8D1A7322AF7ECAB00024596 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8D1A7362AF7ECAB00024596 /* PBXTargetDependency */,
+			);
+			name = redaktusUITests;
+			productName = redaktusUITests;
+			productReference = A8D1A7342AF7ECAB00024596 /* redaktusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8D1A7112AF7ECA600024596 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A8D1A7182AF7ECA600024596 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					A8D1A7292AF7ECAB00024596 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = A8D1A7182AF7ECA600024596;
+					};
+					A8D1A7332AF7ECAB00024596 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = A8D1A7182AF7ECA600024596;
+					};
+				};
+			};
+			buildConfigurationList = A8D1A7142AF7ECA600024596 /* Build configuration list for PBXProject "redaktus" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8D1A7102AF7ECA600024596;
+			productRefGroup = A8D1A71A2AF7ECA600024596 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8D1A7182AF7ECA600024596 /* redaktus */,
+				A8D1A7292AF7ECAB00024596 /* redaktusTests */,
+				A8D1A7332AF7ECAB00024596 /* redaktusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8D1A7172AF7ECA600024596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D1A7242AF7ECAA00024596 /* Preview Assets.xcassets in Resources */,
+				A8D1A7212AF7ECAA00024596 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D1A7282AF7ECAB00024596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D1A7322AF7ECAB00024596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8D1A7152AF7ECA600024596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D1A71F2AF7ECA600024596 /* ContentView.swift in Sources */,
+				A8D1A71D2AF7ECA600024596 /* redaktusApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D1A7262AF7ECAB00024596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D1A72F2AF7ECAB00024596 /* redaktusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D1A7302AF7ECAB00024596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D1A73B2AF7ECAB00024596 /* redaktusUITestsLaunchTests.swift in Sources */,
+				A8D1A7392AF7ECAB00024596 /* redaktusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8D1A72C2AF7ECAB00024596 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8D1A7182AF7ECA600024596 /* redaktus */;
+			targetProxy = A8D1A72B2AF7ECAB00024596 /* PBXContainerItemProxy */;
+		};
+		A8D1A7362AF7ECAB00024596 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8D1A7182AF7ECA600024596 /* redaktus */;
+			targetProxy = A8D1A7352AF7ECAB00024596 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A8D1A73C2AF7ECAB00024596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8D1A73D2AF7ECAB00024596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A8D1A73F2AF7ECAB00024596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = redaktus/redaktus.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"redaktus/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vladpr.redaktus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A8D1A7402AF7ECAB00024596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = redaktus/redaktus.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"redaktus/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vladpr.redaktus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A8D1A7422AF7ECAB00024596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vladpr.redaktusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/redaktus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/redaktus";
+			};
+			name = Debug;
+		};
+		A8D1A7432AF7ECAB00024596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vladpr.redaktusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/redaktus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/redaktus";
+			};
+			name = Release;
+		};
+		A8D1A7452AF7ECAB00024596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vladpr.redaktusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = redaktus;
+			};
+			name = Debug;
+		};
+		A8D1A7462AF7ECAB00024596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vladpr.redaktusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = redaktus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8D1A7142AF7ECA600024596 /* Build configuration list for PBXProject "redaktus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D1A73C2AF7ECAB00024596 /* Debug */,
+				A8D1A73D2AF7ECAB00024596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8D1A73E2AF7ECAB00024596 /* Build configuration list for PBXNativeTarget "redaktus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D1A73F2AF7ECAB00024596 /* Debug */,
+				A8D1A7402AF7ECAB00024596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8D1A7412AF7ECAB00024596 /* Build configuration list for PBXNativeTarget "redaktusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D1A7422AF7ECAB00024596 /* Debug */,
+				A8D1A7432AF7ECAB00024596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8D1A7442AF7ECAB00024596 /* Build configuration list for PBXNativeTarget "redaktusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D1A7452AF7ECAB00024596 /* Debug */,
+				A8D1A7462AF7ECAB00024596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8D1A7112AF7ECA600024596 /* Project object */;
+}
