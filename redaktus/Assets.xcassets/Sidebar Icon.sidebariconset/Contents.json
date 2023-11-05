@@ -13,6 +13,28 @@
       "size" : "16x16"
     },
     {
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "18x18"
+    },
+    {
+      "idiom" : "mac",
+      "scale" : "2x",
+      "size" : "18x18"
+    },
+    {
+      "filename" : "Redaktus Big@24.png",
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "24x24"
+    },
+    {
+      "filename" : "Redaktus Big@48.png",
+      "idiom" : "mac",
+      "scale" : "2x",
+      "size" : "24x24"
+    },
+    {
       "filename" : "Redaktus Big@32px.png",
       "idiom" : "mac",
       "scale" : "1x",
@@ -23,42 +45,6 @@
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "32x32"
-    },
-    {
-      "filename" : "Redaktus Big.png",
-      "idiom" : "mac",
-      "scale" : "1x",
-      "size" : "128x128"
-    },
-    {
-      "filename" : "Redaktus Big@2x 1.png",
-      "idiom" : "mac",
-      "scale" : "2x",
-      "size" : "128x128"
-    },
-    {
-      "filename" : "Redaktus Big@2x.png",
-      "idiom" : "mac",
-      "scale" : "1x",
-      "size" : "256x256"
-    },
-    {
-      "filename" : "Redaktus@05x 1.png",
-      "idiom" : "mac",
-      "scale" : "2x",
-      "size" : "256x256"
-    },
-    {
-      "filename" : "Redaktus@05x.png",
-      "idiom" : "mac",
-      "scale" : "1x",
-      "size" : "512x512"
-    },
-    {
-      "filename" : "Redaktus.png",
-      "idiom" : "mac",
-      "scale" : "2x",
-      "size" : "512x512"
     }
   ],
   "info" : {

@@ -1,64 +1,64 @@
 {
   "images" : [
     {
-      "filename" : "Redaktus Big@16px.png",
+      "filename" : "Redaktus Big@7w.png",
       "idiom" : "mac",
       "scale" : "1x",
-      "size" : "16x16"
+      "size" : "7x7"
     },
     {
-      "filename" : "Redaktus Big@32px 1.png",
+      "filename" : "Redaktus Big@14.png",
       "idiom" : "mac",
       "scale" : "2x",
-      "size" : "16x16"
+      "size" : "7x7"
     },
     {
-      "filename" : "Redaktus Big@32px.png",
+      "filename" : "Redaktus Big@11.png",
       "idiom" : "mac",
       "scale" : "1x",
-      "size" : "32x32"
+      "size" : "11x11"
     },
     {
-      "filename" : "Redaktus Big@05x.png",
+      "filename" : "Redaktus Big@22.png",
       "idiom" : "mac",
       "scale" : "2x",
-      "size" : "32x32"
+      "size" : "11x11"
     },
     {
-      "filename" : "Redaktus Big.png",
+      "filename" : "Redaktus Big@24.png",
       "idiom" : "mac",
       "scale" : "1x",
-      "size" : "128x128"
+      "size" : "24x24"
     },
     {
-      "filename" : "Redaktus Big@2x 1.png",
+      "filename" : "Redaktus Big@48.png",
       "idiom" : "mac",
       "scale" : "2x",
-      "size" : "128x128"
+      "size" : "24x24"
     },
     {
-      "filename" : "Redaktus Big@2x.png",
+      "filename" : "Redaktus Big@50.png",
       "idiom" : "mac",
       "scale" : "1x",
-      "size" : "256x256"
+      "size" : "50x50"
     },
     {
-      "filename" : "Redaktus@05x 1.png",
+      "filename" : "Redaktus Big@100 1.png",
       "idiom" : "mac",
       "scale" : "2x",
-      "size" : "256x256"
+      "size" : "50x50"
     },
     {
-      "filename" : "Redaktus@05x.png",
+      "filename" : "Redaktus Big@100.png",
       "idiom" : "mac",
       "scale" : "1x",
-      "size" : "512x512"
+      "size" : "100x100"
     },
     {
-      "filename" : "Redaktus.png",
+      "filename" : "Redaktus Big@200.png",
       "idiom" : "mac",
       "scale" : "2x",
-      "size" : "512x512"
+      "size" : "100x100"
     }
   ],
   "info" : {

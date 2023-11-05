@@ -14,6 +14,8 @@
 		A8D1A72F2AF7ECAB00024596 /* redaktusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A72E2AF7ECAB00024596 /* redaktusTests.swift */; };
 		A8D1A7392AF7ECAB00024596 /* redaktusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A7382AF7ECAB00024596 /* redaktusUITests.swift */; };
 		A8D1A73B2AF7ECAB00024596 /* redaktusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A73A2AF7ECAB00024596 /* redaktusUITestsLaunchTests.swift */; };
+		A8D1A7492AF80CF300024596 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D1A7482AF80CF300024596 /* Foundation.framework */; };
+		A8D1A74B2AF80D0400024596 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D1A74A2AF80D0400024596 /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,9 @@
 		A8D1A7342AF7ECAB00024596 /* redaktusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = redaktusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D1A7382AF7ECAB00024596 /* redaktusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redaktusUITests.swift; sourceTree = "<group>"; };
 		A8D1A73A2AF7ECAB00024596 /* redaktusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redaktusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A8D1A7482AF80CF300024596 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A8D1A74A2AF80D0400024596 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		A8D1A74C2AF80DC900024596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8D1A7492AF80CF300024596 /* Foundation.framework in Frameworks */,
+				A8D1A74B2AF80D0400024596 /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +86,7 @@
 				A8D1A72D2AF7ECAB00024596 /* redaktusTests */,
 				A8D1A7372AF7ECAB00024596 /* redaktusUITests */,
 				A8D1A71A2AF7ECA600024596 /* Products */,
+				A8D1A7472AF80CF200024596 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +103,7 @@
 		A8D1A71B2AF7ECA600024596 /* redaktus */ = {
 			isa = PBXGroup;
 			children = (
+				A8D1A74C2AF80DC900024596 /* Info.plist */,
 				A8D1A71C2AF7ECA600024596 /* redaktusApp.swift */,
 				A8D1A71E2AF7ECA600024596 /* ContentView.swift */,
 				A8D1A7202AF7ECAA00024596 /* Assets.xcassets */,
@@ -127,6 +136,15 @@
 				A8D1A73A2AF7ECAB00024596 /* redaktusUITestsLaunchTests.swift */,
 			);
 			path = redaktusUITests;
+			sourceTree = "<group>";
+		};
+		A8D1A7472AF80CF200024596 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8D1A74A2AF80D0400024596 /* Carbon.framework */,
+				A8D1A7482AF80CF300024596 /* Foundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,18 +434,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = redaktus/redaktus.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"redaktus/Preview Content\"";
+				DEVELOPMENT_TEAM = 9SPZQVG7RB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = redaktus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Redaktus;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = vladpr.redaktus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -441,18 +465,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = redaktus/redaktus.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"redaktus/Preview Content\"";
+				DEVELOPMENT_TEAM = 9SPZQVG7RB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = redaktus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Redaktus;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = vladpr.redaktus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
