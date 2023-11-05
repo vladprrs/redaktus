@@ -1,0 +1,18 @@
+{
+  "images" : [
+    {
+      "filename" : "Redaktus Big@50.png",
+      "idiom" : "mac",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Redaktus Big@100.png",
+      "idiom" : "mac",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
