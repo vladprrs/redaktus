@@ -8,82 +8,63 @@
 import Foundation
 
 class OpenAIClient {
-
-    // Singleton instance for global access
     static let shared = OpenAIClient()
 
-    private let session: URLSession
-    private let apiKey: String
+    private var apiKey: String?
 
-    init(apiKey: String, session: URLSession = .shared) {
-        self.apiKey = apiKey
-        self.session = session
+    private init() {} // Private initializer to ensure singleton usage
+
+    func setAPIKey(_ key: String) {
+        self.apiKey = key
     }
-    
-    // Function to send text for grammar correction
-    func sendGrammarCorrectionRequest(text: String, completion: @escaping (Result<GrammarCorrectionResponse, Error>) -> Void) {
-        // Construct the request model
-        let requestModel = GrammarCorrectionRequest(
-            prompt: text,
-            temperature: 0.5, // You can adjust this value as needed
-            maxTokens: 60,    // You can adjust this value as needed
-            topP: 1.0,
-            frequencyPenalty: 0.0,
-            presencePenalty: 0.0
-        )
-        
-        // Serialize the request model to JSON data
-        guard let requestData = try? JSONEncoder().encode(requestModel) else {
-            completion(.failure(AppError.processingError(reason: "Failed to encode request data.")))
+
+    func performRequest(with text: String, completion: @escaping (Result<String, Error>) -> Void) {
+        guard let apiKey = apiKey else {
+            completion(.failure(OpenAIError.apiKeyNotSet))
             return
         }
-        
-        // Create the URL for the API request
-        guard let url = URL(string: Constants.API.baseURL) else {
-            completion(.failure(AppError.networkError(description: "Invalid API URL.")))
-            return
-        }
-        
-        // Create the request
-        var request = URLRequest(url: url)
+
+        // Construct the URL and request
+        let endpoint = URL(string: Constants.API.baseURL)!
+        var request = URLRequest(url: endpoint)
         request.httpMethod = "POST"
-        request.httpBody = requestData
-        request.addValue("Bearer \(self.apiKey)", forHTTPHeaderField: Constants.API.apiKeyHeaderField)
+        request.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        
-        // Start the network task
-        let task = session.dataTask(with: request) { data, response, error in
-            // Handle the response
+
+        // Set up the request body with the parameters you need
+        let requestBody = ["prompt": text]
+        do {
+            let requestBodyData = try JSONSerialization.data(withJSONObject: requestBody, options: [])
+            request.httpBody = requestBodyData
+        } catch {
+            completion(.failure(error))
+            return
+        }
+
+        // Perform the request
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
-                completion(.failure(AppError.networkError(description: error.localizedDescription)))
+                completion(.failure(error))
                 return
             }
-            
-            // Check for valid HTTP response
-            guard let httpResponse = response as? HTTPURLResponse,
-                  (200...299).contains(httpResponse.statusCode) else {
-                completion(.failure(AppError.apiError(code: (response as? HTTPURLResponse)?.statusCode ?? 500, message: "Invalid response from server.")))
-                return
-            }
-            
-            // Parse the JSON data
+
             guard let data = data else {
-                completion(.failure(AppError.internalError(message: "No data received from server.")))
+                completion(.failure(OpenAIError.noData))
                 return
             }
-            
-            // Decode the response
+
             do {
-                let responseModel = try JSONDecoder().decode(GrammarCorrectionResponse.self, from: data)
-                completion(.success(responseModel))
+                // Assuming you're expecting a JSON response, you would parse it here
+                let jsonResponse = try JSONSerialization.jsonObject(with: data, options: [])
+                // Process jsonResponse and call completion with the result
+                // For the sake of this example, we're just going to send back the raw JSON
+                let jsonText = String(decoding: data, as: UTF8.self)
+                completion(.success(jsonText))
             } catch {
-                completion(.failure(AppError.processingError(reason: "Failed to decode response.")))
+                completion(.failure(error))
             }
         }
-        
+
         task.resume()
     }
-
-    // Add more API interaction methods as needed
 }
-

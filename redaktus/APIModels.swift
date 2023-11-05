@@ -53,8 +53,10 @@ struct GrammarCorrectionResponse: Codable {
 // MARK: - Error Models
 
 /// Represents the error object returned by the OpenAI API.
-struct OpenAIError: Codable, Error {
-    let error: ErrorDetail
+enum OpenAIError: Error {
+    case apiKeyNotSet
+    case noData
+    case customError(String)
 }
 
 struct ErrorDetail: Codable {

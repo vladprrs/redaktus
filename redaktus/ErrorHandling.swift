@@ -37,6 +37,7 @@ extension AppError: LocalizedError {
     }
 }
 
+
 // Utility class for handling errors throughout the app.
 class ErrorHandler {
     static func handleError(_ error: Error) {
