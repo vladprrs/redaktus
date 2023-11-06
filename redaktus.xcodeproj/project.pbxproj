@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A8D1A71D2AF7ECA600024596 /* redaktusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A71C2AF7ECA600024596 /* redaktusApp.swift */; };
 		A8D1A7212AF7ECAA00024596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D1A7202AF7ECAA00024596 /* Assets.xcassets */; };
 		A8D1A7242AF7ECAA00024596 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D1A7232AF7ECAA00024596 /* Preview Assets.xcassets */; };
 		A8D1A72F2AF7ECAB00024596 /* redaktusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A72E2AF7ECAB00024596 /* redaktusTests.swift */; };
@@ -15,18 +14,6 @@
 		A8D1A73B2AF7ECAB00024596 /* redaktusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A73A2AF7ECAB00024596 /* redaktusUITestsLaunchTests.swift */; };
 		A8D1A7492AF80CF300024596 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D1A7482AF80CF300024596 /* Foundation.framework */; };
 		A8D1A74B2AF80D0400024596 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D1A74A2AF80D0400024596 /* Carbon.framework */; };
-		A8D1A74E2AF82D6B00024596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A74D2AF82D6B00024596 /* AppDelegate.swift */; };
-		A8D1A7502AF82D9300024596 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A74F2AF82D9300024596 /* MenuController.swift */; };
-		A8D1A7522AF82DB200024596 /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A7512AF82DB200024596 /* SettingsWindowController.swift */; };
-		A8D1A7542AF82DCF00024596 /* HotKeyListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A7532AF82DCF00024596 /* HotKeyListener.swift */; };
-		A8D1A7562AF82DE900024596 /* OpenAIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A7552AF82DE900024596 /* OpenAIClient.swift */; };
-		A8D1A7582AF82DFF00024596 /* TextProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A7572AF82DFF00024596 /* TextProcessor.swift */; };
-		A8D1A75A2AF82E1800024596 /* ClipboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A7592AF82E1800024596 /* ClipboardManager.swift */; };
-		A8D1A75C2AF82E9600024596 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A75B2AF82E9600024596 /* UserPreferences.swift */; };
-		A8D1A75E2AF82EAE00024596 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A75D2AF82EAE00024596 /* ErrorHandling.swift */; };
-		A8D1A7602AF82EC900024596 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A75F2AF82EC900024596 /* NotificationManager.swift */; };
-		A8D1A7622AF82EDB00024596 /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A7612AF82EDB00024596 /* APIModels.swift */; };
-		A8D1A7642AF82EF200024596 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D1A7632AF82EF200024596 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +35,6 @@
 
 /* Begin PBXFileReference section */
 		A8D1A7192AF7ECA600024596 /* redaktus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = redaktus.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8D1A71C2AF7ECA600024596 /* redaktusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redaktusApp.swift; sourceTree = "<group>"; };
 		A8D1A7202AF7ECAA00024596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8D1A7232AF7ECAA00024596 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8D1A7252AF7ECAA00024596 /* redaktus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = redaktus.entitlements; sourceTree = "<group>"; };
@@ -60,18 +46,6 @@
 		A8D1A7482AF80CF300024596 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A8D1A74A2AF80D0400024596 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		A8D1A74C2AF80DC900024596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		A8D1A74D2AF82D6B00024596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A8D1A74F2AF82D9300024596 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
-		A8D1A7512AF82DB200024596 /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
-		A8D1A7532AF82DCF00024596 /* HotKeyListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeyListener.swift; sourceTree = "<group>"; };
-		A8D1A7552AF82DE900024596 /* OpenAIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIClient.swift; sourceTree = "<group>"; };
-		A8D1A7572AF82DFF00024596 /* TextProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextProcessor.swift; sourceTree = "<group>"; };
-		A8D1A7592AF82E1800024596 /* ClipboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardManager.swift; sourceTree = "<group>"; };
-		A8D1A75B2AF82E9600024596 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
-		A8D1A75D2AF82EAE00024596 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
-		A8D1A75F2AF82EC900024596 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
-		A8D1A7612AF82EDB00024596 /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
-		A8D1A7632AF82EF200024596 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,21 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				A8D1A74C2AF80DC900024596 /* Info.plist */,
-				A8D1A71C2AF7ECA600024596 /* redaktusApp.swift */,
 				A8D1A7202AF7ECAA00024596 /* Assets.xcassets */,
 				A8D1A7252AF7ECAA00024596 /* redaktus.entitlements */,
-				A8D1A74D2AF82D6B00024596 /* AppDelegate.swift */,
-				A8D1A74F2AF82D9300024596 /* MenuController.swift */,
-				A8D1A7512AF82DB200024596 /* SettingsWindowController.swift */,
-				A8D1A7532AF82DCF00024596 /* HotKeyListener.swift */,
-				A8D1A7552AF82DE900024596 /* OpenAIClient.swift */,
-				A8D1A7572AF82DFF00024596 /* TextProcessor.swift */,
-				A8D1A7592AF82E1800024596 /* ClipboardManager.swift */,
-				A8D1A75B2AF82E9600024596 /* UserPreferences.swift */,
-				A8D1A75D2AF82EAE00024596 /* ErrorHandling.swift */,
-				A8D1A75F2AF82EC900024596 /* NotificationManager.swift */,
-				A8D1A7612AF82EDB00024596 /* APIModels.swift */,
-				A8D1A7632AF82EF200024596 /* Constants.swift */,
 				A8D1A7222AF7ECAA00024596 /* Preview Content */,
 			);
 			path = redaktus;
@@ -310,19 +271,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8D1A7562AF82DE900024596 /* OpenAIClient.swift in Sources */,
-				A8D1A7502AF82D9300024596 /* MenuController.swift in Sources */,
-				A8D1A74E2AF82D6B00024596 /* AppDelegate.swift in Sources */,
-				A8D1A7622AF82EDB00024596 /* APIModels.swift in Sources */,
-				A8D1A7582AF82DFF00024596 /* TextProcessor.swift in Sources */,
-				A8D1A75A2AF82E1800024596 /* ClipboardManager.swift in Sources */,
-				A8D1A75C2AF82E9600024596 /* UserPreferences.swift in Sources */,
-				A8D1A7602AF82EC900024596 /* NotificationManager.swift in Sources */,
-				A8D1A75E2AF82EAE00024596 /* ErrorHandling.swift in Sources */,
-				A8D1A7522AF82DB200024596 /* SettingsWindowController.swift in Sources */,
-				A8D1A7642AF82EF200024596 /* Constants.swift in Sources */,
-				A8D1A71D2AF7ECA600024596 /* redaktusApp.swift in Sources */,
-				A8D1A7542AF82DCF00024596 /* HotKeyListener.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,7 +485,6 @@
 		A8D1A7422AF7ECAB00024596 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -555,7 +502,6 @@
 		A8D1A7432AF7ECAB00024596 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -573,7 +519,6 @@
 		A8D1A7452AF7ECAB00024596 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -589,7 +534,6 @@
 		A8D1A7462AF7ECAB00024596 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
