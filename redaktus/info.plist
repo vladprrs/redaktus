@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDisplayName</key>
+	<string>Redaktus</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.Redaktus</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>LSUIElement</key>
+	<true/> <!-- Status Bar App -->
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>openai.com</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<false/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPSLoads</key>
+				<false/>
+				<key>NSTemporaryExceptionMinimumTLSVersion</key>
+				<string>TLSv1.2</string>
+				<key>NSTemporaryExceptionRequiresForwardSecrecy</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>We do not use the camera.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>We do not use the microphone.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We do not access the photo library.</string>
+	<key>NSUserKeyEquivalents</key>
+	<dict>
+		<key>Redaktus Hotkey</key>
+		<string>@~c</string> <!-- Command + Option + C -->
+	</dict>
+	<key>NSUserAutomationUsageDescription</key>
+	<string>This app requires automation access to correct text in other applications.</string>
+</dict>
+</plist>

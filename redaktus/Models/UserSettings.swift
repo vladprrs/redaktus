@@ -15,21 +15,24 @@ class UserSettings {
     
     var apiKey: String? {
         get {
-            UserDefaults.standard.string(forKey: apiKeyUserDefaultsKey)
+            // Attempt to retrieve from keychain first
+            return retrieveApiKeyFromKeychain()
         }
         set {
             guard let newKey = newValue, isValidApiKey(newKey) else {
                 print("Invalid API Key format or length.")
                 return
             }
+            // Store new key in UserDefaults and Keychain
             UserDefaults.standard.set(newKey, forKey: apiKeyUserDefaultsKey)
+            storeApiKeyInKeychain(apiKey: newKey)
             print("API Key updated successfully.")
         }
     }
-    
+
     private init() {}
     
-    private func isValidApiKey(_ key: String) -> Bool {
+    internal func isValidApiKey(_ key: String) -> Bool {
         // Basic validation for OpenAI API key structure - adjust the logic according to actual key format
         let pattern = #"^[A-Za-z0-9]{10,}$"#
         let result = key.range(of: pattern, options: .regularExpression) != nil

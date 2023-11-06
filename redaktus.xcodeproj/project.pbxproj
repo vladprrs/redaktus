@@ -24,6 +24,12 @@
 		A8EFADDD2AF91C7A007B5ED9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFADDC2AF91C7A007B5ED9 /* Constants.swift */; };
 		A8EFADE02AF91E9B007B5ED9 /* APIKeyValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFADDF2AF91E9B007B5ED9 /* APIKeyValidator.swift */; };
 		A8EFADE22AF91F4E007B5ED9 /* HotKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFADE12AF91F4E007B5ED9 /* HotKeyManager.swift */; };
+		A8EFADE52AF925D8007B5ED9 /* StatusBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFADE42AF925D8007B5ED9 /* StatusBarIcon.swift */; };
+		A8EFADE72AF92602007B5ED9 /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFADE62AF92602007B5ED9 /* AppMenu.swift */; };
+		A8EFADE92AF926F8007B5ED9 /* SettingsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFADE82AF926F8007B5ED9 /* SettingsWindow.swift */; };
+		A8EFADEC2AF92883007B5ED9 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = A8EFADEB2AF92883007B5ED9 /* KeyboardShortcuts */; };
+		A8EFADEE2AF930DE007B5ED9 /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8EFADED2AF930DE007B5ED9 /* info.plist */; };
+		A8EFADF02AF93594007B5ED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFADEF2AF93594007B5ED9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +71,11 @@
 		A8EFADDC2AF91C7A007B5ED9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A8EFADDF2AF91E9B007B5ED9 /* APIKeyValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyValidator.swift; sourceTree = "<group>"; };
 		A8EFADE12AF91F4E007B5ED9 /* HotKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeyManager.swift; sourceTree = "<group>"; };
+		A8EFADE42AF925D8007B5ED9 /* StatusBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarIcon.swift; sourceTree = "<group>"; };
+		A8EFADE62AF92602007B5ED9 /* AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
+		A8EFADE82AF926F8007B5ED9 /* SettingsWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindow.swift; sourceTree = "<group>"; };
+		A8EFADED2AF930DE007B5ED9 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		A8EFADEF2AF93594007B5ED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +85,7 @@
 			files = (
 				A8D1A7492AF80CF300024596 /* Foundation.framework in Frameworks */,
 				A8D1A74B2AF80D0400024596 /* Carbon.framework in Frameworks */,
+				A8EFADEC2AF92883007B5ED9 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +130,7 @@
 		A8D1A71B2AF7ECA600024596 /* redaktus */ = {
 			isa = PBXGroup;
 			children = (
+				A8EFADE32AF925B9007B5ED9 /* UI */,
 				A8EFADDE2AF91E8F007B5ED9 /* Helpers */,
 				A8EFADD92AF91C5B007B5ED9 /* Constants */,
 				A8EFADD62AF91BA7007B5ED9 /* ViewModels */,
@@ -126,6 +139,8 @@
 				A8D1A7202AF7ECAA00024596 /* Assets.xcassets */,
 				A8D1A7252AF7ECAA00024596 /* redaktus.entitlements */,
 				A8D1A7222AF7ECAA00024596 /* Preview Content */,
+				A8EFADED2AF930DE007B5ED9 /* info.plist */,
+				A8EFADEF2AF93594007B5ED9 /* AppDelegate.swift */,
 			);
 			path = redaktus;
 			sourceTree = "<group>";
@@ -209,6 +224,16 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		A8EFADE32AF925B9007B5ED9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A8EFADE42AF925D8007B5ED9 /* StatusBarIcon.swift */,
+				A8EFADE62AF92602007B5ED9 /* AppMenu.swift */,
+				A8EFADE82AF926F8007B5ED9 /* SettingsWindow.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,6 +250,9 @@
 			dependencies = (
 			);
 			name = redaktus;
+			packageProductDependencies = (
+				A8EFADEB2AF92883007B5ED9 /* KeyboardShortcuts */,
+			);
 			productName = redaktus;
 			productReference = A8D1A7192AF7ECA600024596 /* redaktus.app */;
 			productType = "com.apple.product-type.application";
@@ -298,6 +326,9 @@
 				Base,
 			);
 			mainGroup = A8D1A7102AF7ECA600024596;
+			packageReferences = (
+				A8EFADEA2AF92883007B5ED9 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+			);
 			productRefGroup = A8D1A71A2AF7ECA600024596 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -316,6 +347,7 @@
 			files = (
 				A8D1A7242AF7ECAA00024596 /* Preview Assets.xcassets in Resources */,
 				A8D1A7212AF7ECAA00024596 /* Assets.xcassets in Resources */,
+				A8EFADEE2AF930DE007B5ED9 /* info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,11 +372,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8EFADE52AF925D8007B5ED9 /* StatusBarIcon.swift in Sources */,
 				A8EFADD32AF91932007B5ED9 /* ClipboardManager.swift in Sources */,
+				A8EFADE92AF926F8007B5ED9 /* SettingsWindow.swift in Sources */,
 				A8EFADCF2AF917EE007B5ED9 /* KeyboardListener.swift in Sources */,
+				A8EFADF02AF93594007B5ED9 /* AppDelegate.swift in Sources */,
 				A8EFADCA2AF9166E007B5ED9 /* CorrectionResult.swift in Sources */,
 				A8EFADE22AF91F4E007B5ED9 /* HotKeyManager.swift in Sources */,
 				A8EFADC82AF91536007B5ED9 /* UserSettings.swift in Sources */,
+				A8EFADE72AF92602007B5ED9 /* AppMenu.swift in Sources */,
 				A8EFADE02AF91E9B007B5ED9 /* APIKeyValidator.swift in Sources */,
 				A8EFADCD2AF91772007B5ED9 /* OpenAIClient.swift in Sources */,
 				A8EFADD52AF919C4007B5ED9 /* TextReplacementService.swift in Sources */,
@@ -672,6 +708,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A8EFADEA2AF92883007B5ED9 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A8EFADEB2AF92883007B5ED9 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8EFADEA2AF92883007B5ED9 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A8D1A7112AF7ECA600024596 /* Project object */;
 }
