@@ -45,7 +45,6 @@
 		A8D1A73A2AF7ECAB00024596 /* redaktusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redaktusUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A8D1A7482AF80CF300024596 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A8D1A74A2AF80D0400024596 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
-		A8D1A74C2AF80DC900024596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +98,6 @@
 		A8D1A71B2AF7ECA600024596 /* redaktus */ = {
 			isa = PBXGroup;
 			children = (
-				A8D1A74C2AF80DC900024596 /* Info.plist */,
 				A8D1A7202AF7ECAA00024596 /* Assets.xcassets */,
 				A8D1A7252AF7ECAA00024596 /* redaktus.entitlements */,
 				A8D1A7222AF7ECAA00024596 /* Preview Content */,
