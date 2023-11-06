@@ -8,7 +8,7 @@
 import Foundation
 
 class OpenAIClient {
-    static let shared = OpenAIClient()
+    static let shared = OpenAIClient(apiKey: "") // Make sure to handle the apiKey appropriately
 
     private var apiKey: String?
 
@@ -18,6 +18,58 @@ class OpenAIClient {
         self.apiKey = key
     }
 
+    func sendGrammarCorrectionRequest(text: String, completion: @escaping (Result<GrammarCorrectionResponse, Error>) -> Void) {
+            // Prepare the request data
+            let requestData = GrammarCorrectionRequest(
+                prompt: text,
+                temperature: 0.5, // You might want these to be parameters or constants
+                maxTokens: 60,
+                topP: 1.0,
+                frequencyPenalty: 0.0,
+                presencePenalty: 0.0
+            )
+            
+            // Convert your requestData into JSON
+            guard let jsonData = try? JSONEncoder().encode(requestData) else {
+                completion(.failure(AppError.processingError(reason: "Could not encode request data.")))
+                return
+            }
+            
+            // Create the URL request
+            var request = URLRequest(url: URL(string: Constants.API.baseURL)!)
+            request.httpMethod = "POST"
+            guard let apiKey = self.apiKey else {
+                // Handle the case where apiKey is nil, perhaps by calling the completion handler with an error
+                completion(.failure(AppError.apiKeyNotSet))
+                return
+            }
+            request.setValue("Bearer \(apiKey)", forHTTPHeaderField: Constants.API.apiKeyHeaderField)
+            request.httpBody = jsonData
+
+            // Start the URL session task
+            let task = URLSession.shared.dataTask(with: request) { data, response, error in
+                // Handle the response here
+                if let error = error {
+                    completion(.failure(error))
+                    return
+                }
+                
+                guard let data = data else {
+                    completion(.failure(AppError.networkError(description: "No data received from the server.")))
+                    return
+                }
+                
+                do {
+                    let response = try JSONDecoder().decode(GrammarCorrectionResponse.self, from: data)
+                    completion(.success(response))
+                } catch {
+                    completion(.failure(error))
+                }
+            }
+            task.resume()
+        }
+
+    
     func performRequest(with text: String, completion: @escaping (Result<String, Error>) -> Void) {
         guard let apiKey = apiKey else {
             completion(.failure(OpenAIError.apiKeyNotSet))

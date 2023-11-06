@@ -37,8 +37,8 @@ class HotKeyListener {
 
     private func registerHotKey() {
         // Define the event type for the hotkey
-        let eventType = EventTypeSpec(eventClass: kEventClassKeyboard, eventKind: kEventHotKeyPressed)
-        
+        var eventType = EventTypeSpec(eventClass: OSType(kEventClassKeyboard), eventKind: UInt32(kEventHotKeyPressed))
+
         // Register the hotkey with Carbon
         InstallEventHandler(GetApplicationEventTarget(), { (handlerCallRef, event, userData) -> OSStatus in
             // Call the action on target when hotkey is pressed
